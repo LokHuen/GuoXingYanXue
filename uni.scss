@@ -1,0 +1,83 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+
+/*每个页面公共css */
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: transparent;
+}
+.safe-padding-bottom {
+  // iPhoneX的安全距离
+  padding-bottom: content(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+view,
+text,
+scroll-view {
+  box-sizing: border-box;
+}
+image {
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  &::after {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+@mixin fc() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin pt() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin te($line) {
+  /*! autoprefixer: off */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  /*! autoprefixer: on */
+}

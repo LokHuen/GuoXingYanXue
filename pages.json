@@ -1,0 +1,33 @@
+{
+	"pages": [{
+		"path": "pages/home/index",
+		"style": {}
+	},{
+		"path": "pages/detaile/index",
+		"style": {}
+	},{
+		"path": "pages/soundList/index",
+		"style": {}
+	},{
+		"path": "pages/vedioList/index",
+		"style": {}
+	},{
+		"path": "pages/vedioItemList/index",
+		"style": {}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "果行研学",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		
+	},
+	"requiredBackgroundModes" : ["audio"],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"rh-(.*)": "@/components/$1/index.vue"
+		}
+	},
+	"workers": "static/workers"
+}

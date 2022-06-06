@@ -1,0 +1,40 @@
+.oauth_bg {
+  @include pt();
+  @include fc();
+  letter-spacing: 2rpx;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  font-family: none !important;
+  .oauth_content {
+    font-size: 30rpx;
+    width: 554rpx;
+    background: white;
+    border-radius: 20rpx;
+    text-align: center;
+    .oauth_head {
+      margin-bottom: 24rpx;
+      margin-top: 100rpx;
+    }
+    .btn_content {
+      margin: 80rpx auto;
+      width: 425rpx;
+      @include fc();
+      flex-direction: row;
+      justify-content: space-between;
+      .single_btn {
+        width: 177rpx;
+        height: 60rpx;
+        @include fc();
+        color: white;
+        background: black;
+        line-height: 60rpx;
+        font-size: 30rpx;
+        border-radius: 10rpx;
+        overflow: hidden;
+      }
+      .refuse {
+        background: #959595;
+      }
+    }
+  }
+}

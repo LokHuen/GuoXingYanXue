@@ -1,0 +1,32 @@
+.container {
+  background: white;
+  @include fc();
+  .landing_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .logo {
+      width: vmax(140);
+      margin: 0 auto;
+    }
+    .middle {
+      margin: vmax(85) auto;
+      width: vmax(500);
+    }
+    .progress {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #e51f4d;
+      &_text {
+        font-weight: 700;
+        font-size: vmax(40);
+        line-height: vmax(40);
+      }
+      &_rate {
+        font-size: vmax(20);
+      }
+    }
+  }
+}
